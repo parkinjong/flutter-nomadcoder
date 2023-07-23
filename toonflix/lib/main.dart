@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
@@ -70,6 +70,7 @@ class App extends StatelessWidget {
                 height: 20,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     decoration: BoxDecoration(
@@ -79,12 +80,31 @@ class App extends StatelessWidget {
                     child: const Padding(
                       padding: EdgeInsets.symmetric(
                         vertical: 20,
-                        horizontal: 50,
+                        horizontal: 45,
                       ),
                       child: Text(
                         'Transfer',
                         style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF1F2123),
+                      borderRadius: BorderRadius.circular(45),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 20,
+                        horizontal: 45,
+                      ),
+                      child: Text(
+                        'Request',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
                         ),
                       ),
                     ),
