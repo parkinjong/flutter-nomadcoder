@@ -13,7 +13,8 @@ class App extends StatelessWidget{
         appBar: AppBar(
           title: Text('Hello flutter!'),
         ),
-        body: Center(child: Text('Hello world!'),
+        body: Center(
+          child: Text('Hello world!'),
         ),
       ),
     );
