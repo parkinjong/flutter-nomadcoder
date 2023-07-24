@@ -6,4 +6,9 @@ class WebtoonModel {
     required this.title,
     required this.thumb,
   });
+
+  WebtoonModel.fromJson(Map<String, dynamic> json)
+      : id = json['id'],
+        title = json['title'],
+        thumb = json['thumb'];
 }
